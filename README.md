@@ -1,8 +1,9 @@
 import pdfplumber
 import google.generativeai as genai
+import streamlit as st
+import google.generativeai as genai
 
-# 1. إعداد الـ API الخاص بـ Gemini
-genai.configure(api_key="") 
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 # 2. وظيفة استخراج النص (حل مشكلة النصوص المقلوبة)
 def extract_text_from_pdf(pdf_file):
