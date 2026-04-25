@@ -2,7 +2,7 @@ import pdfplumber
 import google.generativeai as genai
 
 # 1. إعداد الـ API الخاص بـ Gemini
-genai.configure(api_key="YOUR_GEMINI_API_KEY") 
+genai.configure(api_key="AIzaSyBIgtxcMnczQG2oeiSq--UDlx1aNH-raeY") 
 
 # 2. وظيفة استخراج النص (حل مشكلة النصوص المقلوبة)
 def extract_text_from_pdf(pdf_file):
