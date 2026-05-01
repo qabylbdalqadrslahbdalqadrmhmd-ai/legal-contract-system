@@ -205,7 +205,7 @@ def analyze_contract_gemini(api_key: str, contract_text: str,
                              image_data: dict | None = None) -> dict:
 
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.0-flash")
 
     detail_map = {"مختصر": "موجز", "متوسط": "متوسط التفصيل", "تفصيلي مكثف": "تفصيلي جداً"}
     detail = detail_map.get(options["detail_level"], "متوسط التفصيل")
@@ -282,7 +282,7 @@ def analyze_contract_gemini(api_key: str, contract_text: str,
 # ─────────────────────────────────────────────
 def generate_contract_gemini(api_key: str, contract_type: str, details: str) -> str:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.0-flash")
 
     prompt = f"""أنت محامٍ خبير في صياغة العقود القانونية باللغة العربية.
 اكتب عقد {contract_type} احترافي وشامل باللغة العربية.
