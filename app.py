@@ -6,7 +6,7 @@ def install(pkg):
 
 try:
     import google.generativeai as genai
-except ImportError
+except ImportError:
     install("google-generativeai")
     import google.generativeai as genai
 
