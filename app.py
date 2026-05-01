@@ -770,7 +770,8 @@ with st.sidebar:
     st.markdown("### ⚙️ خيارات التحليل")
     check_missing        = st.checkbox("🔍 تحقق من البنود الناقصة", value=True)
     check_risks          = st.checkbox("⚠️ تحليل المخاطر القانونية", value=True)
-    suggest_improvements = st.checkbox("💡 اقتراح تحسينات", value=True)
+    sucontract_type = st.selectbox("اختر نوع العقد", ["تلقائي", "عقد عمل", "عقد إيجار", "أخرى"], key="contract_type_unique")
+
     generate_score       = st.checkbox("🎯 تقييم شامل (نقاط)", value=True)
 
     st.markdown("---")
