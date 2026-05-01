@@ -755,7 +755,8 @@ with st.sidebar:
     <a href="https://aistudio.google.com" target="_blank" style="color:#00d4aa">aistudio.google.com</a>
 </div>
 """, unsafe_allow_html=True)
-    api_key = st.text_input("Gemini API Key", type="api_unique_1", placeholder="AIza...")
+    api_key = st.text_input("Google Gemini API Key", type="password", key="api_unique_1")
+
 
     st.markdown("---")
     st.markdown("### 📋 نوع العقد")
